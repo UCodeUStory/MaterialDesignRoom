@@ -31,7 +31,7 @@ public class ParalleViewPagerActivity extends AppCompatActivity {
         System.out.println("offset:"+mViewPager.getOffscreenPageLimit());
         mViewPager.setOffscreenPageLimit(3);
         mViewPager.setAdapter(adapter);
-        WelcompagerTransformer  transformer = new WelcompagerTransformer();
+        WelcompagerTransformer transformer = new WelcompagerTransformer();
         mViewPager.setPageTransformer(true, transformer);
         mViewPager.setOnPageChangeListener(transformer);
     }

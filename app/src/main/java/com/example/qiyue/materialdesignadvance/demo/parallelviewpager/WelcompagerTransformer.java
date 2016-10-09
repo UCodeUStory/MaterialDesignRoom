@@ -34,13 +34,9 @@ public class WelcompagerTransformer implements PageTransformer, OnPageChangeList
 		
 		int bg1_green = view.getContext().getResources().getColor(R.color.bg1_green);
 		int bg2_blue = view.getContext().getResources().getColor(R.color.bg2_blue);
-//			int bg3_green = view.getContext().getResources().getColor(R.color.bg3_green);
-		
+
 		Integer tag = (Integer) view.getTag();
 		View parent = (View) view.getParent();
-//		if(parent instanceof ViewPager){
-//			System.out.println("yes~~~~~~~~~~~tag:"+tag+", position:"+position);
-//		}
 		//颜色估值器
 		ArgbEvaluator evaluator = new ArgbEvaluator();
 		int color = bg1_green;
@@ -71,14 +67,13 @@ public class WelcompagerTransformer implements PageTransformer, OnPageChangeList
 //		    colorAnim.setDuration(3000);  
 //		    colorAnim.start();  
 		}
-		
 		if(position==0){
 			System.out.println("position==0");
 			//pageChanged作用--解决问题：只有在切换页面的时候才展示平移动画，如果不判断则会只是移动一点点当前页面松开也会执行一次平移动画
 			if(pageChanged){
 				bg1.setVisibility(View.VISIBLE);
 				bg2.setVisibility(View.VISIBLE);
-				
+
 				ObjectAnimator animator_bg1 = ObjectAnimator.ofFloat(bg1, "translationX", 0,-bg1.getWidth());
 				animator_bg1.setDuration(400);
 				animator_bg1.addUpdateListener(new AnimatorUpdateListener() {
@@ -89,14 +84,13 @@ public class WelcompagerTransformer implements PageTransformer, OnPageChangeList
 					}
 				});
 				animator_bg1.start();
-				
+
 				ObjectAnimator animator_bg2 = ObjectAnimator.ofFloat(bg2, "translationX", bg2.getWidth(),0);
 				animator_bg2.setDuration(400);
 				animator_bg2.start();
 				pageChanged= false;
 			}
-		}else 
-		if(position==-1||position==1){//所有效果复原
+		}else if(position==-1||position==1){//所有效果复原
 			bg2.setTranslationX(0);
 			bg1.setTranslationX(0);
 			mscv.smoothScrollTo(0, 0);

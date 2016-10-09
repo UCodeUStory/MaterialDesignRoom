@@ -48,6 +48,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
+        android:visibility="gone"
         android:text="工作圈和生活圈\n互不干扰"
         android:textColor="#fff"
         android:textSize="30dp" />
@@ -60,6 +61,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
+        android:visibility="gone"
         android:text="通过平行空间同时运行两个微信账号，将你的工作和生活轻松分离"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#fff" />
