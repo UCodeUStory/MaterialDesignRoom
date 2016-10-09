@@ -6,6 +6,7 @@ import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_behavior.C
 import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_custom_behavior.CoordinatorLayoutCustomBehaviorActivity;
 import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_custom_behavior.CoordinatorLayoutScrollBehaviorActivity;
 import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_custom_behavior.RecyclerViewScrollBehaviorActivity;
+import com.example.qiyue.materialdesignadvance.demo.parallelviewpager.ParalleViewPagerActivity;
 import com.example.qiyue.materialdesignadvance.demo.scrolltoolbar.RecyclerViewScrollToolBarActivity;
 
 import java.util.List;
@@ -24,6 +25,7 @@ public class MainActivity extends BaseActivity {
         datas.add("自定义Behavior监听View的大小和位置");
         datas.add("自定义Behavior监听NestScrollView的滚动");
         datas.add("自定义Behavior监听RecyclerView的滚动");
+        datas.add("自定义ViewPager实现平行空间引导页");
     }
 
     @Override
@@ -43,6 +45,10 @@ public class MainActivity extends BaseActivity {
                 break;
             case Constants.COORDINATOR_CUSTOM_SCROLL_RECYCLER_BEHAVIOR:
                 startAty(RecyclerViewScrollBehaviorActivity.class);
+                break;
+            case Constants.PARALLE_SPLASH_VIEWPAGER:
+                startAty(ParalleViewPagerActivity.class);
+                break;
         }
     }
 
