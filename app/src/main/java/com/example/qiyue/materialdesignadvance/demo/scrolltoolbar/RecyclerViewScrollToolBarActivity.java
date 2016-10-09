@@ -20,19 +20,20 @@ public class RecyclerViewScrollToolBarActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private ImageButton fab;
     private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view_scroll_tool_bar);
-        mRecyclerView = (RecyclerView)findViewById(R.id.recyclerview);
-        fab = (ImageButton)findViewById(R.id.fab);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+        fab = (ImageButton) findViewById(R.id.fab);
 
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setTitle("监听滚动的RecyclerView让toolbar隐藏");
         List<String> datas = new ArrayList<>();
-        for (int i=1;i<100;i++){
-            datas.add("Android"+i);
+        for (int i = 1; i < 100; i++) {
+            datas.add("Android" + i);
         }
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.addOnScrollListener(new FabScrollListener(new HideScrollListener() {
@@ -50,7 +51,6 @@ public class RecyclerViewScrollToolBarActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(adapter);
 
 
-
     }
 
     public void hideAnimator() {
@@ -62,7 +62,7 @@ public class RecyclerViewScrollToolBarActivity extends AppCompatActivity {
         toolbar.animate().translationY(-toolbar.getHeight()).setInterpolator(new AccelerateInterpolator(3));
         RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) fab.getLayoutParams();
 
-        fab.animate().translationY(fab.getHeight()+layoutParams.bottomMargin).setInterpolator(new AccelerateInterpolator(3));
+        fab.animate().translationY(fab.getHeight() + layoutParams.bottomMargin).setInterpolator(new AccelerateInterpolator(3));
     }
 
     public void showAnimator() {
