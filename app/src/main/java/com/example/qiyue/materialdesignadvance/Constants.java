@@ -16,4 +16,8 @@ public class Constants {
     public static final int COORDINATOR_CUSTOM_SCROLL_RECYCLER_BEHAVIOR = 4;
 
     public static final int PARALLE_SPLASH_VIEWPAGER = 5;
+
+    public static final int APPBARLAYOUT = 6;
+
+    public static final int APPBARLAYOUT_TABLAYOUT_VIEWPAGER = 7;
 }

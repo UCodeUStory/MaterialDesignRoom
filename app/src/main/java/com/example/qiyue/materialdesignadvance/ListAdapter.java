@@ -27,11 +27,11 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.RVHolderView> 
 
     @Override
     public void onBindViewHolder(RVHolderView holder, int position) {
-        if(position%2==0){
-            holder.tv_label.setTextColor(0xFF21ac05);
+     /*   if(position%2==0){
+            holder.tv_label.setTextColor(0xFFff8706);
         }else{
             holder.tv_label.setTextColor(0xFF0d18e9);
-        }
+        }*/
           holder.tv_label.setText(datas.get(position));
           holder.tv_count.setText(""+(position+1));
 

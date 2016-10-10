@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
- android:layout_width="match_parent"
+    android:layout_width="match_parent"
+    android:padding="5dp"
     android:layout_height="match_parent">
 
     <TextView
@@ -11,17 +12,21 @@
         android:textColor="#f13a08"
         android:textSize="18sp"
         android:padding="10dp"
+        android:layout_marginRight="5dp"
         android:textStyle="bold"
         android:layout_height="60dp" />
     <TextView
         android:id="@+id/tv_lable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="创建"
+        android:text="创adsfasdfasdfasf建"
         android:layout_toRightOf="@+id/tv_count"
-        android:textColor="#0d18e9"
+        android:textColor="#72ff06"
         android:textSize="18sp"
         android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/shap"
         android:gravity="center_vertical"
         />
 </RelativeLayout>
