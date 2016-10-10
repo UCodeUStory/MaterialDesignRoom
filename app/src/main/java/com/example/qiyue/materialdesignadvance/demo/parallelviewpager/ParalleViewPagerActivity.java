@@ -7,20 +7,23 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 
 import com.example.qiyue.materialdesignadvance.R;
 
+/**
+ * 平行空间效果，通过transformer 实现页面的位置监听，计算动画和颜色
+ * 布局通过两层背景达到切换效果，底部通过ImageView 和一个水平不可滚动scrollView实现
+ */
 public class ParalleViewPagerActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
     private int[] layouts = {
-            R.layout.welcome11,
-            R.layout.welcome2,
-            R.layout.welcome3
+            R.layout.welcome_first,
+            R.layout.welcome_three,
+            R.layout.welcome_second
 //			R.layout.welcome1,
-//			R.layout.welcome2,
-//			R.layout.welcome3
+//			R.layout.welcome_three,
+//			R.layout.welcome_second
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +34,8 @@ public class ParalleViewPagerActivity extends AppCompatActivity {
         System.out.println("offset:"+mViewPager.getOffscreenPageLimit());
         mViewPager.setOffscreenPageLimit(3);
         mViewPager.setAdapter(adapter);
-        WelcompagerTransformer transformer = new WelcompagerTransformer();
+       // WelcompagerTransformer transformer = new WelcompagerTransformer();
+        ViewPagerTransformer transformer = new ViewPagerTransformer();
         mViewPager.setPageTransformer(true, transformer);
         mViewPager.setOnPageChangeListener(transformer);
     }
