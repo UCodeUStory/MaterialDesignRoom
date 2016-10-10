@@ -22,7 +22,8 @@
         <activity android:name=".demo.coordinatorlayout_custom_behavior.RecyclerViewScrollBehaviorActivity" />
         <activity android:name=".demo.parallelviewpager.ParalleViewPagerActivity" />
         <activity android:name=".demo.coordinatorlayout_appbarlayout.AppbarLayoutActivity" />
-        <activity android:name=".demo.appbarLayout_tablayout_viewpager.AppBarTabLayoutViewPagerActivity"></activity>
+        <activity android:name=".demo.appbarLayout_tablayout_viewpager.AppBarTabLayoutViewPagerActivity" />
+        <activity android:name=".demo.appbarlayout_collapsingtoolbarlayout.CollapsingToolbarActivity"></activity>
     </application>
 
 </manifest>

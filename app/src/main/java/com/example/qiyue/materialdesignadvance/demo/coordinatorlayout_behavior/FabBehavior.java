@@ -91,5 +91,4 @@ public class FabBehavior extends FloatingActionButton.Behavior {
         ViewCompat.animate(fab).scaleX(1f).scaleY(1f).start();
     }
 
-
 }

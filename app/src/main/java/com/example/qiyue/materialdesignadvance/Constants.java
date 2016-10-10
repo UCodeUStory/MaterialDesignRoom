@@ -20,4 +20,6 @@ public class Constants {
     public static final int APPBARLAYOUT = 6;
 
     public static final int APPBARLAYOUT_TABLAYOUT_VIEWPAGER = 7;
+
+    public static final int APPBARLAYOUT_COLLAPSINGTOOLBAR = 8;
 }
