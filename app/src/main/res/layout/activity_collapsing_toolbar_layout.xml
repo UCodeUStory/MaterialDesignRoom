@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.qiyue.materialdesignadvance.demo.appbarlayout_collapsingtoolbarlayout.CollapsingToolbarActivity">
+    tools:context=".demo.collapsingtoolbarlayout_two.CollapsingToolbarLayoutActivity">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -132,18 +132,20 @@
             android:layout_width="match_parent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
             android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="match_parent"
-                android:src="@drawable/header"
-                android:scaleType="centerCrop"
-                app:layout_collapseMode="parallax"
-                app:layout_collapseParallaxMultiplier="0.5"
-                android:layout_height="400dp" />
-            <FrameLayout
-                app:layout_collapseMode="parallax"
+            <!--折叠后的大小由里面存放Toolbar决定-->
+          <!--  <FrameLayout
+
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
                 android:layout_width="match_parent"
                 android:background="#e99505"
-                android:layout_height="200dp">
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/header"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.5"
+                    android:layout_height="400dp" />
                 <TextView
                     android:layout_width="match_parent"
                     android:padding="20dp"
@@ -153,14 +155,42 @@
                     android:text="CollapsingToolbarLaout包含多个子控件的排列和帧布局一样，然后根据layout_collapseMode行为对每一个做处理,
                     layout_collapseMode 决定是否折叠还是固定，而折叠后的样式取决于 CollapsingToolbar里设置的layout_scrollFlags，可以选择固定，或者跟随滚出屏幕"
                     android:layout_height="wrap_content" />
-            </FrameLayout>
-            <android.support.v7.widget.Toolbar
-                app:layout_collapseMode="parallax"
-                app:navigationIcon="@drawable/abc_ic_ab_back_mtrl_am_alpha"
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary" />
+            </FrameLayout>-->
+                <FrameLayout
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/header"
+                        android:scaleType="centerCrop"
+                        android:layout_height="400dp" />
+
+                </FrameLayout>
+
+                <TextView
+                    app:layout_collapseMode="none"
+                    android:layout_width="match_parent"
+                    android:text="自定义固定区域"
+                    android:textSize="15sp"
+                    android:layout_gravity="bottom"
+                    android:padding="15sp"
+                    android:background="#0dacc1"
+                    android:layout_margin="10dp"
+                    android:textColor="#333333"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.Toolbar
+                    app:layout_collapseMode="none"
+                    app:navigationIcon="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+                    android:id="@+id/toolbar"
+                    android:visibility="invisible"
+                    android:layout_marginTop="400dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="?attr/colorPrimary" />
+
+
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 </android.support.design.widget.CoordinatorLayout>

@@ -4,6 +4,8 @@ import android.content.Intent;
 
 import com.example.qiyue.materialdesignadvance.demo.appbarLayout_tablayout_viewpager.AppBarTabLayoutViewPagerActivity;
 import com.example.qiyue.materialdesignadvance.demo.appbarlayout_collapsingtoolbarlayout.CollapsingToolbarActivity;
+import com.example.qiyue.materialdesignadvance.demo.collapsingtoolbarlayout_two.CollapsingToolbarLayoutActivity;
+import com.example.qiyue.materialdesignadvance.demo.collapsingtoolbarlayout_two.ToolbarAnchorActivity;
 import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_appbarlayout.AppbarLayoutActivity;
 import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_behavior.CoordinatorBehaviorActivity;
 import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_custom_behavior.CoordinatorLayoutCustomBehaviorActivity;
@@ -32,6 +34,8 @@ public class MainActivity extends BaseActivity {
         datas.add("通过AppBarLayout实现子控件跟随滚动");
         datas.add("AppBarLayout和TabLayout和ViewPager实现滚动Tab效果");
         datas.add("通过AppBarLayout和CollapsingToolbarLayout实现折叠");
+        datas.add("CollapsingToolBarLayout看来只能和Toolbar实现折叠后固定顶部,所以，通过隐藏Toolbar,来实现自定义固定布局和位置,也可以给Toolbar设置marginTop");
+        datas.add("通过Toolbar 通过layout_anchor浮动在某一个View上,实现自定义位置");
     }
 
     @Override
@@ -63,6 +67,12 @@ public class MainActivity extends BaseActivity {
                 break;
             case Constants.APPBARLAYOUT_COLLAPSINGTOOLBAR:
                 startAty(CollapsingToolbarActivity.class);
+                break;
+            case Constants.APPBARLAYOUT_COLLAPSINGTOOLBAR_TWO:
+                startAty(CollapsingToolbarLayoutActivity.class);
+                break;
+            case Constants.CollAPSINGTOOLBAR_THREE:
+                startAty(ToolbarAnchorActivity.class);
                 break;
         }
     }
