@@ -26,4 +26,6 @@ public class Constants {
     public static final int APPBARLAYOUT_COLLAPSINGTOOLBAR_TWO = 9;
 
     public static final int CollAPSINGTOOLBAR_THREE = 10;
+
+    public static final int MaterialDesignAnimation = 11;
 }

@@ -25,7 +25,8 @@
         <activity android:name=".demo.appbarLayout_tablayout_viewpager.AppBarTabLayoutViewPagerActivity" />
         <activity android:name=".demo.appbarlayout_collapsingtoolbarlayout.CollapsingToolbarActivity" />
         <activity android:name=".demo.collapsingtoolbarlayout_two.CollapsingToolbarLayoutActivity" />
-        <activity android:name=".demo.collapsingtoolbarlayout_two.ToolbarAnchorActivity"></activity>
+        <activity android:name=".demo.collapsingtoolbarlayout_two.ToolbarAnchorActivity" />
+        <activity android:name=".demo.meterial_design_animation.ReveralAnimationActivity"></activity>
     </application>
 
 </manifest>

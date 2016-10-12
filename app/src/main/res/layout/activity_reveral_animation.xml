@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.qiyue.materialdesignadvance.demo.meterial_design_animation.ReveralAnimationActivity">
+    <Button
+        android:id="@+id/button_one"
+        android:layout_width="130dp"
+        android:text="中间揭露"
+        android:textSize="20sp"
+        android:background="#cf1dd6"
+        android:layout_height="130dp" />
+    <Button
+        android:id="@+id/button_two"
+        android:layout_width="130dp"
+        android:text="左上角揭露"
+        android:textSize="20sp"
+        android:background="#1fba14"
+        android:layout_height="130dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="设置背景?attr/selectableItemBackground实现水波纹,通过修改系统主题属性colorControlHighlight可以切换颜色"
+        android:textColor="#1f1fed"
+        android:padding="20dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="130dp"
+        android:text="水波纹效果"
+        android:background="?attr/selectableItemBackground"
+        android:layout_height="130dp" />
+    <Button
+        android:layout_width="130dp"
+        android:text="水波纹效果"
+        android:background="?attr/selectableItemBackground"
+        android:layout_height="130dp" />
+    <Button
+        android:layout_width="130dp"
+        android:text="水波纹效果2"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_height="130dp" />
+</LinearLayout>
