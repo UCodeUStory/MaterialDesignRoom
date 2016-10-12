@@ -126,18 +126,25 @@
                 android:layout_height="32dp"
                 />
             <TextView
-                android:id="@+id/main.textview.title"
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="8dp"
                 android:gravity="center_vertical"
-                android:text="ToolBar"
+                android:text="UStory"
+                android:visibility="invisible"
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
                 />
 
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
-
+    <com.example.qiyue.materialdesignadvance.demo.collapsingtoolbarlayout_two.CircleImageView
+        android:id="@+id/circleView"
+        android:layout_width="100dp"
+        android:src="@drawable/kenan"
+        app:layout_behavior="com.example.qiyue.materialdesignadvance.demo.collapsingtoolbarlayout_two.CircleViewBehavior"
+        android:layout_gravity ="center"
+        android:layout_height="100dp" />
 
 </android.support.design.widget.CoordinatorLayout>
