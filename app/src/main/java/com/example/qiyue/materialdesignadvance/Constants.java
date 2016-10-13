@@ -28,4 +28,6 @@ public class Constants {
     public static final int CollAPSINGTOOLBAR_THREE = 10;
 
     public static final int MaterialDesignAnimation = 11;
+
+    public static final int CUSTOM_ANIMATION_FRAME = 12;
 }

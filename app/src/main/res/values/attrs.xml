@@ -4,4 +4,21 @@
         <attr name="border_width" format="dimension" />
         <attr name="border_color" format="color" />
     </declare-styleable>
+
+    <declare-styleable name="UScrollParam">
+        <attr name="scroll_alpha" format="boolean"/>
+        <attr name="scroll_scaleX" format="boolean"/>
+        <attr name="scroll_scaleY" format="boolean"/>
+        <attr name="scroll_fromBgColor" format="color"/>
+        <attr name="scroll_toBgColor" format="color"/>
+        <attr name="scroll_translation"/>
+    </declare-styleable>
+
+    <attr name="scroll_translation">
+        <flag name="fromTop" value="0x01" />
+        <flag name="fromBottom" value="0x02" />
+        <flag name="fromLeft" value="0x04" />
+        <flag name="fromRight" value="0x08" />
+    </attr>
+
 </resources>

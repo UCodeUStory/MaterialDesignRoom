@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.qiyue.materialdesignadvance.demo.custom_animation_frame.UScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ustory="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.qiyue.materialdesignadvance.demo.custom_animation_frame.CustomAnimationFrameActivity">
+    <com.example.qiyue.materialdesignadvance.demo.custom_animation_frame.UContentView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="#33efb7"
+            android:textColor="#312fb6"
+            android:textSize="25sp"
+            android:padding="25dp"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:text="测试Content在代码中我已经将其设置为屏幕高度,所以xml中设置的会无效" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="这是条惊人的消息！！"
+            android:textSize="15sp"
+            android:padding="40dp"
+            ustory:scroll_translation="fromLeft"
+            ustory:scroll_fromBgColor="#25dfdc"
+            ustory:scroll_toBgColor="#4bf534"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="这是条惊人的消息！！"
+            android:textSize="15sp"
+            android:padding="40dp"
+            ustory:scroll_translation="fromRight"
+            ustory:scroll_fromBgColor="#25dfdc"
+            ustory:scroll_toBgColor="#f55e34"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="这是条惊人的消息！！"
+            android:textSize="15sp"
+            ustory:scroll_translation="fromLeft"
+            android:padding="40dp"
+            ustory:scroll_fromBgColor="#25dfdc"
+            ustory:scroll_toBgColor="#f5346b"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="这是条惊人的消息！！"
+            android:textSize="15sp"
+            android:padding="40dp"
+            ustory:scroll_translation="fromBottom"
+            ustory:scroll_fromBgColor="#25dfdc"
+            ustory:scroll_toBgColor="#f58834"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="这是条惊人的消息！！"
+            android:textSize="15sp"
+            android:padding="40dp"
+            ustory:scroll_translation="fromTop"
+            ustory:scroll_fromBgColor="#25dfdc"
+            ustory:scroll_toBgColor="#4bf534"
+            android:layout_height="wrap_content" />
+        <com.example.qiyue.materialdesignadvance.demo.collapsingtoolbarlayout_two.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="left"
+            ustory:scroll_alpha="true"
+            ustory:scroll_translation="fromLeft|fromBottom"
+            ustory:scroll_fromBgColor="#eae241"
+            ustory:scroll_toBgColor="#11989f"
+            android:src="@drawable/dongman_2" />
+        <com.example.qiyue.materialdesignadvance.demo.collapsingtoolbarlayout_two.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            ustory:scroll_alpha="true"
+            ustory:scroll_fromBgColor="#eae241"
+            ustory:scroll_toBgColor="#11989f"
+            android:layout_gravity="right"
+            ustory:scroll_translation="fromRight|fromBottom"
+            android:src="@drawable/dongman_3" />
+        <com.example.qiyue.materialdesignadvance.demo.collapsingtoolbarlayout_two.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            ustory:scroll_alpha="true"
+            ustory:scroll_fromBgColor="#eae241"
+            ustory:scroll_toBgColor="#30a744"
+            android:layout_gravity="left"
+            ustory:scroll_translation="fromLeft|fromTop"
+            android:src="@drawable/dong_man_4" />
+        <com.example.qiyue.materialdesignadvance.demo.collapsingtoolbarlayout_two.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            ustory:scroll_alpha="true"
+            android:layout_gravity="right"
+            ustory:scroll_translation="fromRight|fromTop"
+            ustory:scroll_fromBgColor="#eae241"
+            ustory:scroll_toBgColor="#f53434"
+            android:src="@drawable/dongman_5" />
+    </com.example.qiyue.materialdesignadvance.demo.custom_animation_frame.UContentView>
+</com.example.qiyue.materialdesignadvance.demo.custom_animation_frame.UScrollView>

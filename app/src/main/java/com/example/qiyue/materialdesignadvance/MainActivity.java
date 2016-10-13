@@ -11,6 +11,7 @@ import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_behavior.C
 import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_custom_behavior.CoordinatorLayoutCustomBehaviorActivity;
 import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_custom_behavior.CoordinatorLayoutScrollBehaviorActivity;
 import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_custom_behavior.RecyclerViewScrollBehaviorActivity;
+import com.example.qiyue.materialdesignadvance.demo.custom_animation_frame.CustomAnimationFrameActivity;
 import com.example.qiyue.materialdesignadvance.demo.meterial_design_animation.ReveralAnimationActivity;
 import com.example.qiyue.materialdesignadvance.demo.parallelviewpager.ParalleViewPagerActivity;
 import com.example.qiyue.materialdesignadvance.demo.scrolltoolbar.RecyclerViewScrollToolBarActivity;
@@ -38,6 +39,7 @@ public class MainActivity extends BaseActivity {
         datas.add("CollapsingToolBarLayout看来只能和Toolbar实现折叠后固定顶部,所以，通过隐藏Toolbar,来实现自定义固定布局和位置,也可以给Toolbar设置marginTop");
         datas.add("通过Toolbar 通过layout_anchor浮动在某一个View上,实现自定义位置");
         datas.add("使用5.0自带ViewAnimationUtils实现MaterialDesign揭露效果和水波纹效果");
+        datas.add("自定义动画框架,模仿CoordinatorLayout");
     }
 
     @Override
@@ -78,6 +80,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case Constants.MaterialDesignAnimation:
                 startAty(ReveralAnimationActivity.class);
+                break;
+            case Constants.CUSTOM_ANIMATION_FRAME:
+                startAty(CustomAnimationFrameActivity.class);
                 break;
         }
     }
