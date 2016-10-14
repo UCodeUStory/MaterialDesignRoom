@@ -9,6 +9,7 @@
             backward-compatibility can go here.
         -->
     </style>
+
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorAccent</item>
@@ -17,5 +18,9 @@
         <item name="colorControlHighlight">#27d7b7</item>
         <item name="colorButtonNormal">#9906a1</item>
     </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

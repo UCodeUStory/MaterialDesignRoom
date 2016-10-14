@@ -15,6 +15,7 @@ import com.example.qiyue.materialdesignadvance.demo.custom_animation_frame.Custo
 import com.example.qiyue.materialdesignadvance.demo.meterial_design_animation.ReveralAnimationActivity;
 import com.example.qiyue.materialdesignadvance.demo.parallelviewpager.ParalleViewPagerActivity;
 import com.example.qiyue.materialdesignadvance.demo.scrolltoolbar.RecyclerViewScrollToolBarActivity;
+import com.example.qiyue.materialdesignadvance.demo.svg_vector.SVGVectorActivity;
 
 import java.util.List;
 
@@ -40,6 +41,8 @@ public class MainActivity extends BaseActivity {
         datas.add("通过Toolbar 通过layout_anchor浮动在某一个View上,实现自定义位置");
         datas.add("使用5.0自带ViewAnimationUtils实现MaterialDesign揭露效果和水波纹效果");
         datas.add("自定义动画框架,模仿CoordinatorLayout");
+        datas.add("SVG-Vector实现基本效果矢量图");
+        datas.add("分析事件传递机制");
     }
 
     @Override
@@ -83,6 +86,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case Constants.CUSTOM_ANIMATION_FRAME:
                 startAty(CustomAnimationFrameActivity.class);
+                break;
+            case Constants.SVG_VECTOR:
+                startAty(SVGVectorActivity.class);
                 break;
         }
     }

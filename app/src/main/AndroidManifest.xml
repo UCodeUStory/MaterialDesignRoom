@@ -27,7 +27,11 @@
         <activity android:name=".demo.collapsingtoolbarlayout_two.CollapsingToolbarLayoutActivity" />
         <activity android:name=".demo.collapsingtoolbarlayout_two.ToolbarAnchorActivity" />
         <activity android:name=".demo.meterial_design_animation.ReveralAnimationActivity" />
-        <activity android:name=".demo.custom_animation_frame.CustomAnimationFrameActivity"></activity>
+        <activity android:name=".demo.custom_animation_frame.CustomAnimationFrameActivity" />
+        <activity
+            android:name=".demo.svg_vector.SVGVectorActivity"
+            android:label="@string/title_activity_svgvector"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

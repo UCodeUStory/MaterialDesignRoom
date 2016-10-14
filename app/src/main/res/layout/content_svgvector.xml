@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.qiyue.materialdesignadvance.demo.svg_vector.SVGVectorActivity"
+    tools:showIn="@layout/activity_svgvector">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="#FCFCFC"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="VectorDrawable使用兼容在2.1yi上，而动态矢量图VectorAnimationDrawable需要5.0以上,AppCompat 23.2之后, 并且设置 gradle，vectorDrawables.useSupportLibrary = true,但是5.0以上一定会被普及，UI真的很漂亮"
+                android:gravity="center_horizontal"
+                android:textColor="#333333"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="160dp"
+                android:src="@drawable/s"
+                android:background="#f76969"
+                android:layout_height="160dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="我们获取到UI提供的svg可以通过在线网站：http://inloop.github.io/svg2android/，拖拽进去就会转换一个vector.xml"
+                android:gravity="center_horizontal"
+                android:textColor="#333333"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="制作矢量图除了美工的AI,有个在线的网站：http://editor.method.ac/ 可以在线绘制"
+                android:gravity="center_horizontal"
+                android:textColor="#2f55df"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="最后补充，复杂动画必须美工设计，简单的动画我们可以通过代码直接绘制一个矢量图，前提你必须足够了解Path绘制"
+                android:gravity="center_horizontal"
+                android:textColor="#af1de9"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_svg_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/searchbar_anim"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
