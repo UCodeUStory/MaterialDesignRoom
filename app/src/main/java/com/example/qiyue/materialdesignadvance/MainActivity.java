@@ -14,6 +14,7 @@ import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_custom_beh
 import com.example.qiyue.materialdesignadvance.demo.custom_animation_frame.CustomAnimationFrameActivity;
 import com.example.qiyue.materialdesignadvance.demo.meterial_design_animation.ReveralAnimationActivity;
 import com.example.qiyue.materialdesignadvance.demo.parallelviewpager.ParalleViewPagerActivity;
+import com.example.qiyue.materialdesignadvance.demo.scroller.CustomSlideMenuActivity;
 import com.example.qiyue.materialdesignadvance.demo.scrolltoolbar.RecyclerViewScrollToolBarActivity;
 import com.example.qiyue.materialdesignadvance.demo.svg_vector.SVGVectorActivity;
 
@@ -42,7 +43,8 @@ public class MainActivity extends BaseActivity {
         datas.add("使用5.0自带ViewAnimationUtils实现MaterialDesign揭露效果和水波纹效果");
         datas.add("自定义动画框架,模仿CoordinatorLayout");
         datas.add("SVG-Vector实现基本效果矢量图");
-        datas.add("分析事件传递机制");
+      //  datas.add("分析事件传递机制");
+        datas.add("重写HorizontalScrollView实现侧滑效果");
     }
 
     @Override
@@ -90,6 +92,10 @@ public class MainActivity extends BaseActivity {
             case Constants.SVG_VECTOR:
                 startAty(SVGVectorActivity.class);
                 break;
+            case Constants.CUSTOM_SLIDLE_MENU:
+                startAty(CustomSlideMenuActivity.class);
+                break;
+
         }
     }
 

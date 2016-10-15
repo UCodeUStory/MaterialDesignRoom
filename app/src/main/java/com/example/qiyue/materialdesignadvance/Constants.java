@@ -32,4 +32,6 @@ public class Constants {
     public static final int CUSTOM_ANIMATION_FRAME = 12;
 
     public static final int SVG_VECTOR = 13;
+
+    public static final int CUSTOM_SLIDLE_MENU = 14;
 }

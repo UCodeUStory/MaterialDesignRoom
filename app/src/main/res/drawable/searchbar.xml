@@ -6,7 +6,7 @@
 
     <path
         android:name="search"
-        android:pathData="@string/path"
+        android:pathData="M141,17 A9,9 0 1,1 142,16 L149,23"
         android:strokeAlpha="0.8"
         android:strokeColor="#000000"
         android:strokeLineCap="round"
