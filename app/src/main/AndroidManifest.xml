@@ -32,7 +32,8 @@
             android:name=".demo.svg_vector.SVGVectorActivity"
             android:label="@string/title_activity_svgvector"
             android:theme="@style/AppTheme" />
-        <activity android:name=".demo.scroller.CustomSlideMenuActivity"></activity>
+        <activity android:name=".demo.scroller.CustomSlideMenuActivity" />
+        <activity android:name=".demo.scroller.CustomSlideMenu2Activity"></activity>
     </application>
 
 </manifest>

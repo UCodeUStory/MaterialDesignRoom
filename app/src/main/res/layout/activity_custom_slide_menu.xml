@@ -12,13 +12,19 @@
         android:layout_height="fill_parent"
         android:orientation="horizontal" >
 
-        <include layout="@layout/menu" />
+        <include android:id="@+id/include" layout="@layout/menu" />
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:background="#0e97af" >
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="主菜单"
+                android:textSize="20sp"
+                android:textColor="#b30101"
+                android:layout_height="wrap_content" />
             <!-- 主页面 fragment -->
         </LinearLayout>
     </LinearLayout>

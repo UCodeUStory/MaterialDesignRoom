@@ -3,22 +3,32 @@ package com.example.qiyue.materialdesignadvance.demo.scroller;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 
+import com.example.qiyue.materialdesignadvance.demo.collapsingtoolbarlayout_two.L;
 import com.nineoldandroids.view.ViewHelper;
 
+/**
+ * create by qiyue
+ */
 public class SlidingMenu extends HorizontalScrollView {
 
 	private int mScreenWidth;
 	private ViewGroup mMenu;
 	private ViewGroup mMain;
-	private int mMenuRightPadding = 100;
+	/**
+	 * 这里默认px
+	 */
+	private int mMenuRightPadding = 200;
 	private int mMenuWidth;
 	private boolean isOnce;
+
+	private boolean isOpen = true;
 
 	public SlidingMenu(Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -46,10 +56,12 @@ public class SlidingMenu extends HorizontalScrollView {
 	@Override
 	protected void onLayout(boolean changed, int l, int t, int r, int b) {
 		//
-		if(changed){
-			this.scrollTo(mMenuWidth, 0);
+		//if(changed){
+			L.i("onLayout=");
+			//this.scrollTo(0, 0);
+			closeMenu();
 			isOnce = true;
-		}
+		//}
 		super.onLayout(changed, l, t, r, b);
 	}
 	
@@ -63,17 +75,25 @@ public class SlidingMenu extends HorizontalScrollView {
 			break;
 		case MotionEvent.ACTION_UP:
 			float dx = ev.getX() - downX;
-			if(dx<mScreenWidth/3){
-				this.smoothScrollTo(mMenuWidth, 0);
+			dx = Math.abs(dx);
+			if (!isOpen) {
+				if (dx < mScreenWidth / 3) {
+					closeMenu();
+				} else {
+					openMenu();
+				}
 			}else{
-				this.smoothScrollTo(0, 0);
+				if (dx < mScreenWidth / 3) {
+					openMenu();
+				} else {
+					closeMenu();
+				}
 			}
 			return true;
 
 		default:
 			break;
 		}
-		
 		return super.onTouchEvent(ev);
 	}
 
@@ -99,6 +119,17 @@ public class SlidingMenu extends HorizontalScrollView {
 		//3.透明度效果
 		ViewHelper.setAlpha(mMenu, 1-factor);
 		
+	}
+
+
+	public void openMenu(){
+		this.smoothScrollTo(0, 0);
+		this.isOpen = true;
+	}
+
+	public void closeMenu(){
+		this.smoothScrollTo(mMenuWidth, 0);
+		this.isOpen = false;
 	}
 	
 }
