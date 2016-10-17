@@ -33,7 +33,18 @@
             android:label="@string/title_activity_svgvector"
             android:theme="@style/AppTheme" />
         <activity android:name=".demo.scroller.CustomSlideMenuActivity" />
-        <activity android:name=".demo.scroller.CustomSlideMenu2Activity"></activity>
+        <activity android:name=".demo.scroller.CustomSlideMenu2Activity" />
+        <activity android:name=".demo.paint.PaintActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".demo.paint.ShaderActivity" />
+        <activity android:name=".demo.paint.LinearGradientActivity"></activity>
     </application>
 
 </manifest>

@@ -13,6 +13,9 @@ import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_custom_beh
 import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_custom_behavior.RecyclerViewScrollBehaviorActivity;
 import com.example.qiyue.materialdesignadvance.demo.custom_animation_frame.CustomAnimationFrameActivity;
 import com.example.qiyue.materialdesignadvance.demo.meterial_design_animation.ReveralAnimationActivity;
+import com.example.qiyue.materialdesignadvance.demo.paint.LinearGradientActivity;
+import com.example.qiyue.materialdesignadvance.demo.paint.PaintActivity;
+import com.example.qiyue.materialdesignadvance.demo.paint.ShaderActivity;
 import com.example.qiyue.materialdesignadvance.demo.parallelviewpager.ParalleViewPagerActivity;
 import com.example.qiyue.materialdesignadvance.demo.scroller.CustomSlideMenu2Activity;
 import com.example.qiyue.materialdesignadvance.demo.scroller.CustomSlideMenuActivity;
@@ -50,6 +53,9 @@ public class MainActivity extends BaseActivity {
         datas.add("通过自定义ViewGroup实现侧滑效果");
         datas.add("通过自定义ViewGroup加上ViewDragHelper实现侧滑效果");
         datas.add("通过自定义ViewGroup实现ViewPager");
+        datas.add("Paint完全解析");
+        datas.add("Paint图片渲染器");
+        datas.add("Paint线性渲染器");
     }
 
     @Override
@@ -102,6 +108,15 @@ public class MainActivity extends BaseActivity {
                 break;
             case Constants.CUSTOM_SLIDE_MENU_2:
                 startAty(CustomSlideMenu2Activity.class);
+                break;
+            case Constants.PAINT:
+                startAty(PaintActivity.class);
+                break;
+            case Constants.SHADER_BITMAPSHADER:
+                startAty(ShaderActivity.class);
+                break;
+            case Constants.SHADER_LINEARGRADIENT:
+                startAty(LinearGradientActivity.class);
                 break;
 
 

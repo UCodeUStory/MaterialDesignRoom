@@ -17,4 +17,6 @@
 
     <color name="toolBar_1">#0dd2dc</color>
     <color name="toolBar_2">#f14202</color>
+    <color name="paint_demo_bg_1">#040140</color>
+    <color name="paint_demo_bg_2">#8c7be4</color>
 </resources>

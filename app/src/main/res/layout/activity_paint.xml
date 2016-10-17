@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qiyue.materialdesignadvance.demo.paint.PaintActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#3730ef"
+        android:id="@+id/lly_container"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_textView"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content" />
+        <com.example.qiyue.materialdesignadvance.demo.paint.PaintView
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

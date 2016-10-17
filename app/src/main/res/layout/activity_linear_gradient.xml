@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.qiyue.materialdesignadvance.demo.paint.LinearGradientActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <com.example.qiyue.materialdesignadvance.demo.paint.LinearGradientView
+            android:layout_width="400dp"
+            android:layout_height="150dp" />
+        <com.example.qiyue.materialdesignadvance.demo.paint.LinearGradientTextView
+            android:layout_width="match_parent"
+            android:text="那些痛的记忆，落在春的泥土里"
+            android:textSize="25sp"
+            android:textColor="#020101"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

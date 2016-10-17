@@ -36,4 +36,10 @@ public class Constants {
     public static final int CUSTOM_SLIDLE_MENU = 14;
 
     public static final int CUSTOM_SLIDE_MENU_2 = 15;
+
+    public static final int PAINT = 19;
+
+    public static final int SHADER_BITMAPSHADER = 20;
+
+    public static final int SHADER_LINEARGRADIENT = 21;
 }
