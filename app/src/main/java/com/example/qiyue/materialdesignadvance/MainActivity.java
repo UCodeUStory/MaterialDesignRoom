@@ -12,6 +12,7 @@ import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_custom_beh
 import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_custom_behavior.CoordinatorLayoutScrollBehaviorActivity;
 import com.example.qiyue.materialdesignadvance.demo.coordinatorlayout_custom_behavior.RecyclerViewScrollBehaviorActivity;
 import com.example.qiyue.materialdesignadvance.demo.custom_animation_frame.CustomAnimationFrameActivity;
+import com.example.qiyue.materialdesignadvance.demo.hotfix.HotFixActivity;
 import com.example.qiyue.materialdesignadvance.demo.meterial_design_animation.ReveralAnimationActivity;
 import com.example.qiyue.materialdesignadvance.demo.paint.LinearGradientActivity;
 import com.example.qiyue.materialdesignadvance.demo.paint.PaintActivity;
@@ -56,6 +57,7 @@ public class MainActivity extends BaseActivity {
         datas.add("Paint完全解析");
         datas.add("Paint图片渲染器");
         datas.add("Paint线性渲染器");
+        datas.add("Nuaw热修复解坑之路");
     }
 
     @Override
@@ -118,7 +120,9 @@ public class MainActivity extends BaseActivity {
             case Constants.SHADER_LINEARGRADIENT:
                 startAty(LinearGradientActivity.class);
                 break;
-
+            case Constants.HOT_FIX:
+                startAty(HotFixActivity.class);
+                break;
 
         }
     }

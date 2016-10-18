@@ -42,4 +42,6 @@ public class Constants {
     public static final int SHADER_BITMAPSHADER = 20;
 
     public static final int SHADER_LINEARGRADIENT = 21;
+
+    public static final int HOT_FIX = 22;
 }
