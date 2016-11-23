@@ -19,4 +19,27 @@
     <color name="toolBar_2">#f14202</color>
     <color name="paint_demo_bg_1">#040140</color>
     <color name="paint_demo_bg_2">#8c7be4</color>
+
+    <color name="radar">#f9582c</color>
+    <color name="radar2">#FFF73703</color>
+    <color name="rad">#FFED6A0D</color>
+
+    <color name="histogram_color_one">#f400d3</color>
+    <color name="histogram_color_two">#e95a1c</color>
+    <color name="histogram_color_three">#025bb4</color>
+    <color name="histogram_color_four">#2ed70c</color>
+
+    <color name="wave_color">#0ed9f4</color>
+
+    <color name="arcColor_1">#228638</color>
+    <color name="arcColor_2">#86a92d</color>
+    <color name="arcColor_3">#961212</color>
+    <color name="arcColor_4">#0ce217</color>
+    <color name="arcColor_5">#9f8c1c</color>
+    <color name="arcColor_6">#4b0e58</color>
+    <color name="arcColor_7">#e711b5</color>
+    <color name="arcColor_8">#f13f23</color>
+    <color name="arcColor_9">#2f9e8f</color>
+
+    <color name="choujiang_bg">#e6e6e6</color>
 </resources>

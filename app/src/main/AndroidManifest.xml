@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.qiyue.materialdesignadvance">
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
+        android:name=".MApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/taiji"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name=".MApplication"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".demo.scrolltoolbar.RecyclerViewScrollToolBarActivity" />
         <activity android:name=".demo.coordinatorlayout_behavior.CoordinatorBehaviorActivity" />
@@ -47,7 +44,49 @@
 
         <activity android:name=".demo.paint.ShaderActivity" />
         <activity android:name=".demo.paint.LinearGradientActivity" />
-        <activity android:name=".demo.hotfix.HotFixActivity"></activity>
+        <activity android:name=".demo.hotfix.HotFixActivity" />
+        <activity android:name=".demo.paint.filter.FilterActivity" />
+        <activity android:name=".demo.paint.filter.ListFilterActivity" />
+        <activity android:name=".demo.paint.filter.EmBossFilterActivity" />
+        <activity android:name=".demo.paint.filter.ColorMatrixOneActivity" />
+        <activity android:name=".demo.canvas.CanvasActivity" />
+        <activity android:name=".demo.paint.RadialSweepGradientActivity" />
+        <activity android:name=".demo.paint.ComposeShaderActivity" />
+        <activity android:name=".demo.radarview.RadarActivity" />
+        <activity android:name=".demo.customviewpager.CustomViewPagerActivity" />
+        <activity android:name=".demo.nine_gride_password.NineGridPasswordActivity" />
+        <activity android:name=".demo.chart.ChartActivity" />
+        <activity android:name=".demo.animation.BallActivity" />
+        <activity android:name=".demo.animation.PopBallActivity" />
+        <activity android:name=".demo.paint.BlurActivity" />
+        <activity android:name=".demo2.webviewjs.WebActivity" />
+        <activity android:name=".demo.customheader.CustomAddHeaderViewActivity" />
+        <activity android:name=".demo.customheader.NewGroupActivity" />
+        <activity android:name=".demo2.tech.AllTechActivity" />
+        <activity
+            android:name=".demo.customdrawable.CustomDrawableActivity"
+            android:label="@string/title_activity_custom_drawable"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".demo.path.CustomSearchBarActvity" />
+        <activity android:name=".demo.path.CustomWaveActivity" />
+        <activity android:name=".demo.path.WaveActivity" />
+        <activity android:name=".demo.path.pathMeasure.PathMeasureActivity" />
+        <activity android:name=".demo.path.pathMeasure.PathAnimationActivity" />
+        <activity android:name=".demo.path.pathMeasure.ZanAnimationActivity" />
+        <activity android:name=".demo.animation.GifAnimationActivity" />
+        <activity
+            android:name=".demo2.surfaceview.SurfaceViewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".demo2.texture.TextureActivity" />
+        <activity android:name=".demo2.inputpassword.CustomPasswordActivity" />
+        <activity android:name=".demo2.circlepassword.CirclePasswordActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

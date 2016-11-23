@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qiyue.materialdesignadvance.demo.customviewpager.CustomViewPagerActivity">
+    <com.example.qiyue.materialdesignadvance.demo.customviewpager.CustomViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/feng_1"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="我是第一个View" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/feng_2"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="我是第二个View" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/feng_3"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="我是第三个View" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/feng_4"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="#08068e"
+            android:text="我是第4个View" />
+    </com.example.qiyue.materialdesignadvance.demo.customviewpager.CustomViewPager>
+</RelativeLayout>

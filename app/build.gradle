@@ -23,7 +23,6 @@ android {
         }
     }
 
-
 }
 
 dependencies {
@@ -36,4 +35,6 @@ dependencies {
     compile files('libs/nineoldandroids-2.4.0.jar')
     compile 'com.google.android.gms:play-services-appindexing:8.1.0'
     compile 'cn.jiajixin.nuwa:nuwa:1.0.0'
+    compile 'net.qiujuer.genius:blur:2.0.0-beta4'
+    compile project(':library')
 }

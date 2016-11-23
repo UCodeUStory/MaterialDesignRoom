@@ -37,6 +37,8 @@ public class Constants {
 
     public static final int CUSTOM_SLIDE_MENU_2 = 15;
 
+    public static final int CUSTOM_VIEWPAGER = 18;
+
     public static final int PAINT = 19;
 
     public static final int SHADER_BITMAPSHADER = 20;
@@ -44,4 +46,53 @@ public class Constants {
     public static final int SHADER_LINEARGRADIENT = 21;
 
     public static final int HOT_FIX = 22;
+
+    public static final int CIRCLE_SWEEP = 23;
+
+    public static final int COMPOSE_SHADER = 24;
+
+    public static final int FILTER = 25;
+
+    public static final int CANVAS = 26;
+
+    public static final int RADAR_VIEW = 27;
+
+    public static final int NINE_GRID_PASSWORD = 28;
+
+    public static final int HISTOGRAM = 29;
+
+    public static final int PROPERTY_ANIMATION = 30;
+
+    public static final int BLUR_VIEW = 31;
+
+    public static final int WEB_VIEW_JS_ANDROID = 32;
+
+    public static final int ADD_HEADERVIEW_FOOTERVIEW = 33;
+
+    public static final int TECH_ALL = 36;
+
+    public static final int CUSTOM_DRAWABLE = 37;
+
+    public static final int CUSTOM_SEARCHVIEW = 38;
+
+    public static final int LEARN_CURVE = 39;
+
+    public static final int CUSTOM_WAVE = 40;
+
+    public static final int LEARN_PATHMEASURE = 41;
+
+    public static final int PATH_ANIMATION = 42;
+
+    public static final int ZAN_ANIMATION = 43;
+
+    public static final int SUFRACEVIEW = 44;
+
+    public static final int CUSTOM_TEXTURE = 45;
+
+    public static final int CUSTOM_INPUTPASSWORD = 46;
+
+    public static final int CUSTOM_CIRCLE_PASSWORD_VIEW = 47;
+
+
+
 }

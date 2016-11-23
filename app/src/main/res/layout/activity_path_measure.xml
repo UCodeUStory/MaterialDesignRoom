@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qiyue.materialdesignadvance.demo.path.pathMeasure.PathMeasureActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Pathmeasure测量长度(path.close时即使没有绘制也会算上闭了后的长度)"
+            android:textSize="20sp"
+            android:textColor="#ff1500"
+            android:layout_height="wrap_content" />
+        <com.example.qiyue.materialdesignadvance.demo.path.pathMeasure.PathMeasureView
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="nextContour来测量多路径（需要关闭硬件加速才可以）"
+            android:textSize="20sp"
+            android:textColor="#ff1e00"
+            android:layout_height="wrap_content" />
+        <com.example.qiyue.materialdesignadvance.demo.path.pathMeasure.PathMeasureView2
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="getSegment截取路径（startWithMoveTo为true表示连贯绘制，会和之前的点链接上）"
+            android:textSize="20sp"
+            android:textColor="#ff1e00"
+            android:layout_height="wrap_content" />
+        <com.example.qiyue.materialdesignadvance.demo.path.pathMeasure.PathMeasureView3
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="getPosTan得到某一长度时的点和正切值由他我们就可以做路径动画，时时获取点的坐标
+            这切值是为了绘制方向"
+            android:textSize="20sp"
+            android:textColor="#ff1e00"
+            android:layout_height="wrap_content" />
+        <com.example.qiyue.materialdesignadvance.demo.path.pathMeasure.PathMeasureView4
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+
+    </LinearLayout>
+</ScrollView>

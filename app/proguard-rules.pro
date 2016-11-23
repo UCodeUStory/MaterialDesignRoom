@@ -17,3 +17,5 @@
 #}
 
 -keep class cn.jiajixin.nuwa.** { *; }
+-keep class com.example.qiyue.materialdesignadvance.demo2.webviewjs.** { *; }
+

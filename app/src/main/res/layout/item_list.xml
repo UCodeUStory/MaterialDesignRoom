@@ -9,12 +9,13 @@
         android:layout_width="50dp"
         android:text="10"
         android:gravity="center"
-        android:textColor="#f13a08"
+        android:textColor="#fffefe"
         android:textSize="18sp"
-        android:padding="10dp"
+        android:background="@drawable/count_bg"
         android:layout_marginRight="5dp"
         android:textStyle="bold"
-        android:layout_height="60dp" />
+        android:layout_marginTop="3dp"
+        android:layout_height="50dp" />
     <TextView
         android:id="@+id/tv_lable"
         android:layout_width="match_parent"

@@ -73,5 +73,12 @@ public class BitmapShaderView extends View {
 		matrix.setScale(scale, scale);//缩放比例
 		bitmapShader.setLocalMatrix(matrix);
         canvas.drawCircle(getWidth()/2,getHeight()/2,getWidth()/2,mPaint);
+
+
+        //通过shapeDrawable也可以实现圆形图片
+//		ShapeDrawable shapeDrawable = new ShapeDrawable(new OvalShape());
+//		shapeDrawable.getPaint().setShader(bitmapShader);
+//		shapeDrawable.setBounds(0, 0, width, width);
+//		shapeDrawable.draw(canvas);
     }
 }

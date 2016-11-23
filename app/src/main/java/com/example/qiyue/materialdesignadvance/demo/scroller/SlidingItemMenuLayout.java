@@ -75,6 +75,7 @@ public class SlidingItemMenuLayout extends LinearLayout {
 			 * 如果getScrollX滑动rightChild宽度一半就继续滚动剩余部分，否者关闭
 			 */
 			int offset = (getScrollX()/(float)rightChild.getWidth()) > tap ? rightChild.getWidth()-getScrollX() : -getScrollX();
+
 			mScroller.startScroll(getScrollX(), getScrollY(), offset, 0);
 			invalidate();
 			startX = 0;

@@ -161,7 +161,7 @@ public class CustomTextureView extends TextureView
 
         this.setSurfaceTextureListener(this);
 
-        initData();
+        //initData();
     }
 
     private void initData(){
@@ -171,6 +171,16 @@ public class CustomTextureView extends TextureView
         this.mCurrentMilliseconds = this.timeHour * ONE_HOUR + this.timeMinute * ONE_MINUTE +
                 this.timeSecond * ONE_SECOND;
         mCalendar.setTimeInMillis(mCurrentMilliseconds);
+    }
+
+    public void startTime(int timeHour,int timeMinute,int timeSecond){
+        this.timeHour = timeHour;
+        this.timeMinute = timeMinute;
+        this.timeSecond = timeSecond;
+        this.mCurrentMilliseconds = this.timeHour * ONE_HOUR + this.timeMinute * ONE_MINUTE +
+                this.timeSecond * ONE_SECOND;
+        mCalendar.setTimeInMillis(mCurrentMilliseconds);
+        this.start();
     }
 
     @Override
@@ -231,7 +241,7 @@ public class CustomTextureView extends TextureView
     public void onSurfaceTextureAvailable(SurfaceTexture surface, int width, int height) {
         //TODO draw
         L.i("onSurfaceTextureAvailable");
-        this.start();
+        //this.start();
     }
 
     @Override
@@ -312,8 +322,13 @@ public class CustomTextureView extends TextureView
 
                         mCurrentMilliseconds -= 1000;
                         mCalendar.setTimeInMillis(mCurrentMilliseconds);
-
-                        drawTime(canvas,timeHour,timeMinute,timeSecond);
+                        if (mCurrentMilliseconds>0){
+                            drawTime(canvas,timeHour,timeMinute,timeSecond);
+                        }else{
+                            drawTime(canvas,0,0,0);
+                            this.stopThread();
+                        }
+                        //drawTime(canvas,timeHour,timeMinute,timeSecond);
 
 
                         /**

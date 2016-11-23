@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.qiyue.materialdesignadvance.demo.paint.BlurActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:text="通过第三方库实现图片高斯模糊，三张图片分别用了Java /JniPixes/ JniBitmap 最后这种效率最高"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_first"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <ImageView
+        android:id="@+id/iv_second"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <ImageView
+        android:id="@+id/iv_third"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.qiyue.materialdesignadvance.demo.canvas.CanvasActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <!--当父类是ScrollView 自定义View高度不能设置match_parent
+          该怎么解决？就通过自身内容就行控制
+                  -->
+        <com.example.qiyue.materialdesignadvance.demo.canvas.CanvasView
+            android:layout_width="match_parent"
+            android:layout_height="3000dp" />
+    </LinearLayout>
+</ScrollView>

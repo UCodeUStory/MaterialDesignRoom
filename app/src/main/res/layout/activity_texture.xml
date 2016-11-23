@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.qiyue.materialdesignadvance.demo2.texture.TextureActivity">
+    <com.example.qiyue.materialdesignadvance.demo2.texture.CustomTextureView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        app:backgroundColor="#ffffff"
+        app:textSize="15sp"
+        app:textPadding="2dp"
+        app:rectStrokeSize="1dp"
+        app:rectRadiusSize="0dp"
+        android:layout_height="wrap_content" />
+    <com.example.qiyue.materialdesignadvance.demo2.texture.CustomTextureView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        app:backgroundColor="#ffffff"
+        app:textSize="15sp"
+        app:textPadding="2dp"
+        app:rectStrokeSize="1dp"
+        android:layout_height="wrap_content" />
+    <com.example.qiyue.materialdesignadvance.demo2.texture.CustomTextureView
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        app:textSize="15sp"
+        android:layout_height="wrap_content" />
+    <com.example.qiyue.materialdesignadvance.demo2.texture.CustomTextureView
+        android:layout_width="wrap_content"
+        android:id="@+id/forth"
+        android:layout_marginTop="10dp"
+        app:textSize="20sp"
+        app:rectColor="#7ef203"
+        android:layout_height="wrap_content" />
+    <com.example.qiyue.materialdesignadvance.demo2.texture.CustomTextureView
+        android:layout_width="wrap_content"
+        android:id="@+id/fifth"
+        android:layout_marginTop="10dp"
+        app:textSize="20sp"
+        app:rectColor="#fa300c"
+        android:layout_height="wrap_content" />
+    <com.example.qiyue.materialdesignadvance.demo2.texture.CustomTextureView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/sixth"
+        app:textSize="30sp"
+        app:rectRadiusSize="10dp"
+        app:rectColor="#fd9800"
+        android:layout_height="wrap_content" />
+    <com.example.qiyue.materialdesignadvance.demo2.texture.CustomTextureView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/seventh"
+        app:textSize="30sp"
+        app:rectRadiusSize="10dp"
+        app:rectColor="#fd001e"
+        android:layout_height="wrap_content" />
+    <com.example.qiyue.materialdesignadvance.demo2.texture.CustomTextureView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        app:textSize="30sp"
+        android:id="@+id/nigth"
+        app:textColor="#08ba02"
+        app:rectRadiusSize="10dp"
+        app:rectColor="#fd001e"
+        android:layout_height="wrap_content" />
+    <com.example.qiyue.materialdesignadvance.demo2.texture.CustomTextureView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        app:textSize="30sp"
+        android:id="@+id/nineth"
+        app:textColor="#08ba02"
+        app:rectRadiusSize="25dp"
+        app:rectColor="#f000fd"
+        android:layout_height="wrap_content" />
+</LinearLayout>

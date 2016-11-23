@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#FFF"
+    tools:context="com.example.qiyue.materialdesignadvance.demo.radarview.RadarActivity">
+    <com.example.qiyue.materialdesignadvance.demo.radarview.RadarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.qiyue.materialdesignadvance.demo.radarview.radarSweepView
+        android:id="@+id/radarSweepView"
+        android:layout_width="match_parent"
+        android:background="#00453434"
+        android:layout_height="match_parent" />
+    <com.example.qiyue.materialdesignadvance.demo.paint.CircleImageView
+        android:layout_width="80dp"
+        android:src="@drawable/dongman_3"
+        android:layout_gravity="center"
+        android:layout_height="80dp" />
+</FrameLayout>

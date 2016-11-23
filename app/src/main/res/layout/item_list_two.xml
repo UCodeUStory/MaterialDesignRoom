@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="创adsfasdfasdfasf建"
+        android:layout_toRightOf="@+id/tv_count"
+        android:textColor="#72ff06"
+        android:textSize="18sp"
+        android:paddingTop="70dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/shap"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="50dp"
+        android:text="10"
+        android:gravity="center"
+        android:textColor="#fcfcfc"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/count_bg"
+
+        android:layout_margin="4dp"
+        android:textStyle="bold"
+        android:layout_height="50dp" />
+</FrameLayout>

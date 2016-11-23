@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.qiyue.materialdesignadvance.demo.customheader.NewGroupActivity">
+
+    <com.example.qiyue.materialdesignadvance.demo.customheader.HeaderViewGroup
+        android:layout_width="match_parent"
+        android:id="@+id/springview"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="this is scroll item"
+                    android:background="#f368cc"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="this is scroll item"
+                    android:background="#68b3f3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="this is scroll item"
+                    android:background="#68b3f3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="this is scroll item"
+                    android:background="#68b3f3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="this is scroll item"
+                    android:background="#68b3f3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="this is scroll item"
+                    android:background="#f73324"/>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </com.example.qiyue.materialdesignadvance.demo.customheader.HeaderViewGroup>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.qiyue.materialdesignadvance.demo.paint.filter.FilterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_One"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:text="原图"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#df4e06"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/test_filter_1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="颜色增强"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#df4e06"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <com.example.qiyue.materialdesignadvance.demo.paint.filter.FilterView
+            android:layout_width="200dp"
+            app:flag="2"
+            android:layout_height="300dp" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

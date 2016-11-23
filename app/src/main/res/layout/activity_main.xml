@@ -12,4 +12,13 @@
         android:layout_height="match_parent">
 
     </android.support.v7.widget.RecyclerView>
+    <ImageButton
+        android:id="@+id/fab"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/genduo"
+        />
 </RelativeLayout>

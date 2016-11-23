@@ -11,4 +11,10 @@ Praesent tincidunt lorem sit amet mi consequat cursus. Interdum et malesuada fam
     </string>
     <string name="title_activity_svgvector">SVGVectorActivity</string>
     <string name="path">M141,17 A9,9 0 1,1 142,16 L149,23</string>
+
+    <!-- webview相关 -->
+    <string name="webview_error_tip">数据加载失败，请下拉刷新</string>
+    <string name="webview_load_fail" formatted='false'>网页(%s)加载出错：%s,%s</string>
+    <string name="dialog_title_system_msg">系统消息</string>
+    <string name="title_activity_custom_drawable">CustomDrawableActivity</string>
 </resources>

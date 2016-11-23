@@ -8,6 +8,6 @@ import android.util.Log;
 public class L {
 
     public static void i(String msg){
-        Log.i("qiyue",msg);
+        Log.i("test",msg);
     }
 }
