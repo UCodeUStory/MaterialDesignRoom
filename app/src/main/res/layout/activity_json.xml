@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".demo2.json.JsonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_test_gson"
+            android:layout_width="match_parent"
+            android:text="Gson解析测试"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_test_fastjson"
+            android:layout_width="match_parent"
+            android:text="fastJson解析"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_test_jackson"
+            android:layout_width="match_parent"
+            android:text="jackson解析"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_gson_speed"
+            android:layout_width="match_parent"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_fastjson_speed"
+            android:layout_width="match_parent"
+            android:textColor="#333333"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_jackson_speed"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_describle"
+        android:text="@string/describle"
+        android:layout_height="wrap_content" />
+</LinearLayout>

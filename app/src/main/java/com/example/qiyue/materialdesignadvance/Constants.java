@@ -93,6 +93,23 @@ public class Constants {
 
     public static final int CUSTOM_CIRCLE_PASSWORD_VIEW = 47;
 
+    public static final int EFFECTIVE_JSON = 48;
+
+    public static final int DIFFUTIL = 49;
+
+    public static final int SORTLIST = 50;
+
+    public static final int ANDROID_ANNOTATION = 51;
+
+    public static final int SNAPPY = 52;
+
+    public static final int GREENDAO = 53;
+
+    public static final int DBEXECUTOR = 54;
+
+    public static final int LOADMOREWRAPPER = 55;
+
+
 
 
 }

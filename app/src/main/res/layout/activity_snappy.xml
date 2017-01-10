@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".demo2.snappydb.SnappyActivity">
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:id="@+id/tv_findPerson"
+        android:textColor="#FFFFFFFF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:text="点击查询Person"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_person_field"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -17,4 +17,12 @@ Praesent tincidunt lorem sit amet mi consequat cursus. Interdum et malesuada fam
     <string name="webview_load_fail" formatted='false'>网页(%s)加载出错：%s,%s</string>
     <string name="dialog_title_system_msg">系统消息</string>
     <string name="title_activity_custom_drawable">CustomDrawableActivity</string>
+    <string name="describle">实验表明，fastJson快于</string>
+
+    <string-array name="tab_main">
+        <item>Item not covered</item>
+        <item>Default</item>
+        <item>GridLayoutManager</item>
+        <item>StaggeredGridLayoutManager</item>
+    </string-array>
 </resources>

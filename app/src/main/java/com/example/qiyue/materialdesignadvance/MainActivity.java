@@ -40,8 +40,17 @@ import com.example.qiyue.materialdesignadvance.demo.scroller.CustomSlideMenu2Act
 import com.example.qiyue.materialdesignadvance.demo.scroller.CustomSlideMenuActivity;
 import com.example.qiyue.materialdesignadvance.demo.scrolltoolbar.RecyclerViewScrollToolBarActivity;
 import com.example.qiyue.materialdesignadvance.demo.svg_vector.SVGVectorActivity;
+import com.example.qiyue.materialdesignadvance.demo2.androidannotation.AnnotationActivity;
+import com.example.qiyue.materialdesignadvance.demo2.androidannotation.AnnotationActivity_;
 import com.example.qiyue.materialdesignadvance.demo2.circlepassword.CirclePasswordActivity;
+import com.example.qiyue.materialdesignadvance.demo2.dbexecutor.DBExecutorActivity;
+import com.example.qiyue.materialdesignadvance.demo2.diffutil.DiffUtilActivity;
+import com.example.qiyue.materialdesignadvance.demo2.greendao3.GreenDaoActivity;
 import com.example.qiyue.materialdesignadvance.demo2.inputpassword.CustomPasswordActivity;
+import com.example.qiyue.materialdesignadvance.demo2.json.JsonActivity;
+import com.example.qiyue.materialdesignadvance.demo2.loadmorewrapper.LoadMoreWrapperActivity;
+import com.example.qiyue.materialdesignadvance.demo2.snappydb.SnappyActivity;
+import com.example.qiyue.materialdesignadvance.demo2.sortlistadapter.SortedListActivity;
 import com.example.qiyue.materialdesignadvance.demo2.surfaceview.SurfaceViewActivity;
 import com.example.qiyue.materialdesignadvance.demo2.tech.AllTechActivity;
 import com.example.qiyue.materialdesignadvance.demo2.texture.TextureActivity;
@@ -107,7 +116,16 @@ public class MainActivity extends BaseActivity {
         datas.add("自定义TextureView实现时钟");
         datas.add("自定义PasswordView");
         datas.add("自定义CirclePasswordView");
-       // datas.add("Android-gif-drawable");
+        datas.add("数据传递效率优化");
+        datas.add("优化RecyclerView更新工具之DiffUtil");
+        datas.add("优化RecyclerView排序工具之SortListAdapterCallBack");
+        datas.add("AndroidAnnotation");
+        datas.add("Android中noSql-SnappyDB");
+        datas.add("GreenDAO3");
+        datas.add("DBExecutor");
+        datas.add("LoadMoreWrapper");
+
+        // datas.add("Android-gif-drawable");
         datas.add("混淆配置减小apk大小");
         datas.add("性能优化宏观和微观");
 
@@ -238,7 +256,7 @@ public class MainActivity extends BaseActivity {
                 startAty(ZanAnimationActivity.class);
                 break;
             case Constants.SUFRACEVIEW:
-                startAty(SurfaceViewActivity.class);
+               // startAty(SurfaceViewActivity.class);
                 break;
             case Constants.CUSTOM_TEXTURE:
                 startAty(TextureActivity.class);
@@ -248,6 +266,30 @@ public class MainActivity extends BaseActivity {
                 break;
             case Constants.CUSTOM_CIRCLE_PASSWORD_VIEW:
                 startAty(CirclePasswordActivity.class);
+                break;
+            case Constants.EFFECTIVE_JSON:
+                startAty(JsonActivity.class);
+                break;
+            case Constants.DIFFUTIL:
+                startAty(DiffUtilActivity.class);
+                break;
+            case Constants.SORTLIST:
+                startAty(SortedListActivity.class);
+                break;
+            case Constants.ANDROID_ANNOTATION:
+                startAty(AnnotationActivity_.class);
+                break;
+            case Constants.SNAPPY:
+                startAty(SnappyActivity.class);
+                break;
+            case Constants.GREENDAO:
+                startAty(GreenDaoActivity.class);
+                break;
+            case Constants.DBEXECUTOR:
+                startAty(DBExecutorActivity.class);
+                break;
+            case Constants.LOADMOREWRAPPER:
+                startAty(LoadMoreWrapperActivity.class);
                 break;
          /*   case Constants.ANDROID_GIF:
                 startAty(GifAnimationActivity.class);

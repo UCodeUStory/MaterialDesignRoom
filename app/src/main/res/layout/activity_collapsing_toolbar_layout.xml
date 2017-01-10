@@ -182,7 +182,7 @@
                     android:layout_height="wrap_content" />
                 <android.support.v7.widget.Toolbar
                     app:layout_collapseMode="none"
-                    app:navigationIcon="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+                    app:navigationIcon="@drawable/arrow"
                     android:id="@+id/toolbar"
                     android:visibility="invisible"
                     android:layout_marginTop="400dp"

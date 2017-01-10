@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\android_home\safe-java-js-webview-bridge-master\library\src\main\assets"/></dataSet><dataSet config="debug"><source path="C:\android_home\safe-java-js-webview-bridge-master\library\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/qiyue/my/MaterialDesignRoom/library/src/main/assets"/><source path="/Users/qiyue/my/MaterialDesignRoom/library/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/qiyue/my/MaterialDesignRoom/library/src/debug/assets"/></dataSet></merger>

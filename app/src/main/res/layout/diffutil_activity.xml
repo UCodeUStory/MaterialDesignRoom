@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".demo2.diffutil.DiffUtilActivity">
+
+    <LinearLayout
+        android:id="@+id/lly_header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:text="请求新数据"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/lly_header"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

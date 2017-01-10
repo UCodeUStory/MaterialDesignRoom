@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DBExecutorActivity" >
+
+     <LinearLayout
+         android:id="@+id/header"
+         android:layout_width="match_parent"
+         android:orientation="horizontal"
+         android:background="#d8dada"
+         android:layout_height="wrap_content">
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:textSize="15sp"
+             android:text="姓名"
+             android:gravity="center"
+             android:textColor="#333333"
+             android:padding="10dp"
+             android:background="@drawable/item_bg"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:textSize="15sp"
+             android:text="年龄"
+             android:gravity="center"
+             android:padding="10dp"
+             android:textColor="#333333"
+             android:background="@drawable/item_bg"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="2"
+             android:textSize="15sp"
+             android:gravity="center"
+             android:padding="10dp"
+             android:text="创建时间"
+             android:background="@drawable/item_bg"
+             android:textColor="#333333"
+             android:layout_height="wrap_content" />
+     </LinearLayout>
+     <android.support.v7.widget.RecyclerView
+         android:layout_below="@+id/header"
+         android:layout_above="@+id/footer"
+         android:id="@+id/recyclerView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+     </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_height="200dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_insert"
+                android:layout_width="wrap_content"
+                android:text="插入新数据"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_query_name"
+                android:layout_width="wrap_content"
+                android:text="查询name=qiyue2"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_queryAll"
+                android:layout_width="wrap_content"
+                android:text="查询所有"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_updateName"
+                android:layout_width="wrap_content"
+                android:text="修改name=qiyue3为qiyuenew"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_delete_qiyue5"
+                android:layout_width="wrap_content"
+                android:text="删除qiyue5数据"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -156,7 +156,7 @@
             </FrameLayout>
             <android.support.v7.widget.Toolbar
                 app:layout_collapseMode="parallax"
-                app:navigationIcon="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+                app:navigationIcon="@drawable/arrow"
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"

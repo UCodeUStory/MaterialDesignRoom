@@ -13,6 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".demo.scrolltoolbar.RecyclerViewScrollToolBarActivity" />
         <activity android:name=".demo.coordinatorlayout_behavior.CoordinatorBehaviorActivity" />
@@ -81,12 +86,23 @@
         <activity android:name=".demo2.inputpassword.CustomPasswordActivity" />
         <activity android:name=".demo2.circlepassword.CirclePasswordActivity">
 
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
         </activity>
+        <activity android:name=".demo2.json.JsonActivity"></activity>
+        <activity android:name=".demo2.diffutil.DiffUtilActivity"/>
+        <activity android:name=".demo2.sortlistadapter.SortedListActivity"/>
+        <activity android:name=".demo2.androidannotation.AnnotationActivity_"/>
+        <activity android:name=".demo2.androidannotation.SecondActivity_"/>
+        <activity android:name=".demo2.snappydb.SnappyActivity"/>
+        <activity android:name=".demo2.greendao3.GreenDaoActivity"/>
+        <activity android:name=".demo2.dbexecutor.DBExecutorActivity"/>
+        <activity android:name=".demo2.loadmorewrapper.LoadMoreWrapperActivity"/>
     </application>
 
 </manifest>

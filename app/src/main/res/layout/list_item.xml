@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".demo2.diffutil.DiffUtilActivity">
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:text="1"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="#2073ab"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:minWidth="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/tv_id"
+        android:text="姓名"
+        android:textSize="15sp"
+        android:textColor="#333333"
+        android:padding="10dp"
+        android:minWidth="100dp"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:text="25"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="#21c199"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_name" />
+
+
+</RelativeLayout>
